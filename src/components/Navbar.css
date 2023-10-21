@@ -1,0 +1,123 @@
+
+.navbar-content {
+    
+    justify-content: space-between;
+    align-items: center;
+   
+    background-color: var(--primary-background-color);
+    height: 55px;
+}
+.brand {
+    margin-left: 20px;
+    color: var(--blue);
+    align-items: center;
+}
+.brand div {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    height: 31px;
+    width: 31px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-background-color);
+    margin-right: 5px;
+}
+
+.nav-items {
+    gap: 20px;
+    align-items: center;
+    margin: 0 20px;
+    color: var(--color);
+    font-size: 18px;
+}
+
+.nav-links {
+    gap: 30px;
+}
+
+
+.nav-items h2 {
+   font-weight: normal;
+}
+
+.navbar-content a,Link {
+    text-decoration: none;
+    color: var(--color);
+    
+}
+
+.navbar-content  .contact Link,.navbar-content .contact Link {
+    color: var(--color);
+}
+.darkmode {
+    background-color: var(--secondary-background-color);
+    border-radius: 10px;
+    height: 35px;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 25px;
+    color: var(--color);
+}
+
+.menu-btn:hover {
+    color: var(--blue);
+}
+
+@media screen and (max-width:300px) {
+    .darkmode {
+        display: none;
+    }
+}
+@media screen and (max-width:576px) {
+    .nav-links{
+        font-size: medium;
+        display: none;
+    }
+    .nav-items {
+        margin: 0 10px;
+        gap: 15px;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    .nav-links{
+        font-size:medium;
+        display: none;
+    }
+    .nav-items {
+        margin: 0 10px;
+        gap: 15px;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+    
+    
+}
+@media screen and (min-width:768px) {
+    .nav-items {
+        gap: 20px;
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:992px) {
+
+    .nav-items {
+        gap: 50px;
+        margin: 0 30px;
+    }
+}
+

@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.App-content {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+:root {
+  --primary-background-color: white;
+  --secondary-background-color: #D9D9D9;
+  --third-backgrond-color: #EEEEEE;
+  --blue:#0062FF;
+  --darkerBlue: #0D2346;
+
+  --User-pp-background-color: rgb(41, 7, 73);
+
+  --color:rgba(30, 30, 30, 0.8);
+  --color-black: black;
+}
+
+
+.cursor:hover {
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}

@@ -48,9 +48,6 @@
     
 }
 
-.navbar-content  .contact Link,.navbar-content .contact Link {
-    color: var(--color);
-}
 .darkmode {
     background-color: var(--secondary-background-color);
     border-radius: 10px;
@@ -67,6 +64,10 @@
 }
 
 .menu-btn:hover {
+    color: var(--blue);
+}
+
+.navbar-content .contact {
     color: var(--blue);
 }
 

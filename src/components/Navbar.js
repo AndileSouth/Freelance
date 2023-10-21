@@ -26,7 +26,9 @@ const NAVBAR = () => {
 
                     <div className="nav-item cursor contact">
                         <Link to={`/`}><h2>
-                        Contact
+                        <span className="contact">
+                            Contact
+                            </span> 
                         </h2>  </Link>
                     </div>
 

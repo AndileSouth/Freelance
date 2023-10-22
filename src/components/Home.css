@@ -21,6 +21,7 @@
     margin: 0 50px;
     font-size: large;
     font-weight: 500;
+    
 }
 
 .intro .image-container img {
@@ -64,15 +65,162 @@
     flex: none;
 }
 
+
 .work:hover {
     background-color: #0062ffb9;
 }
 
-@media screen and (max-width:300px) {
-    .btns {
-        flex-direction: column;
-    }
+.below-home {
+    /* background-color: var(--secondary-background-color); */
+    background-color: var(--third-backgrond-color);
+    margin-top: 120px;
 }
+
+.client-reviews {
+    text-align: center;
+    padding-top: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.reviews .row{
+    justify-content: space-around;
+    margin: 20px;
+    gap: 10px;
+}
+
+.reviews {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex: 1;
+    gap: 10px;
+    place-content: center;
+}
+
+.boxes {
+    min-width: 50px;
+    min-height: 100px;
+    height: 250px;
+
+    flex: 1;
+    background-color: var(--primary-background-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.212);
+}
+
+.profilePic {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background-color: var(--secondary-background-color);
+    margin: 10px;
+}
+
+.projects {
+   max-width: 900px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.projects h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.project-contaner {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 20px 20px;
+    gap:10px;
+}
+
+.project-contaner .row {
+    flex: 1;
+    gap: 10px;
+}
+
+.project {
+    height: 350px;
+    
+    flex: 1;
+    border-radius: 20px;
+    background-color: var(--primary-background-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.212);
+}
+
+
+/* Skills */
+
+.skills .image-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.skills {
+    text-align: center;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin: 10px 30px;
+}
+
+.skill {
+    flex: 1;
+    height: 300px;
+    min-width: 50px;
+    background-color: var(--primary-background-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.212);
+    align-items: center;
+    text-align: center;
+}
+
+.skill h2 {
+    color: var(--color-black);
+}
+
+.skill p {
+    margin: 10px;
+}
+
+.contacts {
+    padding: 40px 30px;
+}
+
+.contacts h1 {
+    color: var(--color-black);
+    
+}
+
+.availability {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: var(--blue);
+}
+
+.animation {
+    gap: 5px;
+    margin: 10px;
+}
+
+footer {
+    align-items: center;
+    background-color: var(--User-pp-background-color);
+    padding: 10px;
+    color: var(--primary-background-color);
+    font-size: large;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
 
 @media screen and (max-width:768px) {
     .home-content {
@@ -97,4 +245,86 @@
         justify-content: center;
         margin-top: 20px;
     }
+
+    .project-contaner {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 20px 20px;
+        gap:10px;
+    }
+
+    .projects {
+        text-align: center;
+    }
+
+    .project {
+        height: 370px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .reviews {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex: 1;
+        gap: 10px;
+        
+    }
+
+    .project-contaner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px 20px;
+        gap:10px;
+    }
+
+    .projects {
+        text-align: center;
+    }
+
+    .project {
+        height: 340px;
+    }
+
+    .skill-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin: 10px 30px;
+    }
+    
+    .contacts h1 {
+        color: var(--color-black);
+        font-size: larger;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+    .btns {
+        flex-direction: column;
+    }
+
+    .projects {
+        text-align: center;
+    }
+
+    .project {
+        height: 300px;
+    }
+
+    .skill-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        margin: 10px 30px;
+    }
+
+    .contacts h1 {
+        color: var(--color-black);
+        font-size: larger;
+    }
+    
+    
 }

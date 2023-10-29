@@ -1,5 +1,5 @@
 .home-content {
-    margin-top: 70px;
+    margin-top: 125px;
     
 }
 
@@ -135,14 +135,15 @@
     gap:10px;
 }
 
-.project-contaner .row {
+.project-contaner div {
     flex: 1;
     gap: 10px;
+    border-radius: 10px;
 }
 
 .project {
     height: 350px;
-    
+    overflow: hidden;
     flex: 1;
     border-radius: 20px;
     background-color: var(--primary-background-color);
@@ -219,12 +220,19 @@ footer {
     text-align: center;
 }
 
+.profilePic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
 @media screen and (max-width:768px) {
     .home-content {
-        margin-top: 40px;
+        margin-top: 95px;
     }
     .intro {
         flex-direction: column;

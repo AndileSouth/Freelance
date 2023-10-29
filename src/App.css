@@ -8,6 +8,14 @@
 .App-content {
   max-width: 1300px;
   margin: 0 auto;
+  position: relative;
+}
+
+.NAVBAR {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 :root {

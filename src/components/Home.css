@@ -142,7 +142,7 @@
 }
 
 .project {
-    height: 350px;
+    
     overflow: hidden;
     flex: 1;
     border-radius: 20px;
@@ -266,7 +266,7 @@ footer {
     }
 
     .project {
-        height: 370px;
+        
     }
 }
 
@@ -292,7 +292,7 @@ footer {
     }
 
     .project {
-        height: 340px;
+        
     }
 
     .skill-container {
@@ -319,7 +319,7 @@ footer {
     }
 
     .project {
-        height: 300px;
+        
     }
 
     .skill-container {

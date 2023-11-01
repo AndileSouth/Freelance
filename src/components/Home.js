@@ -5,6 +5,8 @@ import IMAGES from './img/Images';
 
 
 const HOME = () => {
+
+    
     
     return ( 
         <div className="HOME">
@@ -78,17 +80,23 @@ const HOME = () => {
 
                         <div className="project">
                             <div className="image-container">
+                              <a href="https://andilesouth.github.io/Furniture-website/" target="_blank" rel="noopener noreferrer">
                                 <img src={IMAGES.image3} alt="" />
+                                </a>  
                             </div>
                         </div>
                         <div className="project">
                             <div className="image-container">
+                               <a href="https://andilesouth.github.io/Activity-Suggestion-App/" target="_blank" rel="noopener noreferrer">
                                 <img src={IMAGES.image4} alt="" />
+                                </a> 
                             </div>
                         </div>
                         <div className="project">
                             <div className="image-container">
+                               <a href="https://andilesouth.github.io/Dad-Joke-Generator/" target="_blank" rel="noopener noreferrer">
                                 <img src={IMAGES.image5} alt="" />
+                                </a> 
                             </div>
                         </div>
 

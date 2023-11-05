@@ -192,6 +192,11 @@
     padding: 40px 30px;
 }
 
+.contacts button a {
+    text-decoration: none;
+    color: white;
+}
+
 .contacts h1 {
     color: var(--color-black);
     
@@ -318,9 +323,6 @@ footer {
         text-align: center;
     }
 
-    .project {
-        
-    }
 
     .skill-container {
         display: grid;

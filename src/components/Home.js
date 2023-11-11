@@ -1,12 +1,26 @@
 import './Home.css';
 import IMAGES from './img/Images';
 import { Link } from 'react-router-dom';
+import React, { useRef } from 'react';
 
 
 
-const HOME = () => {
+const HOME = ({ section1Ref, section2Ref }) => {
 
-    
+    /* const section1Ref = useRef(null);
+    const section2Ref = useRef(null); */
+
+    const homeScrollToSection = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+      };
+
+      /* const navhomeScrollToSection = (section) => {
+        // Determine the section to scroll to based on the identifier
+        const ref = section === 'section1' ? section1Ref : section2Ref;
+        // Use scrollIntoView to smoothly scroll to the section
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+      }; */
+  
     
     return ( 
         <div className="HOME">
@@ -20,10 +34,10 @@ const HOME = () => {
                         <p>I specialize in crafting dynamic and engaging websites that bring your digital vision to life. Whether you're a small startup or a medium-sized company, I'm here to create a stunning online presence for your business.</p>
 
                         <div className='row btns'>
-                            <div className='work cursor'>
+                            <div className='work cursor' onClick={() => homeScrollToSection(section1Ref)} >
                                     View my work
                             </div>
-                            <div className='work cursor'>
+                            <div className='work cursor' onClick={() => homeScrollToSection(section2Ref)}>
                                 Message me
                             </div>
                         </div>
@@ -73,7 +87,7 @@ const HOME = () => {
                     </div>
                 </div> */}
 
-                <div className="projects">
+                <div className="projects" ref={section1Ref}>
                     <h1>Projects</h1>
                     <p>Each project encapsulates my dedication to blending design aesthetics with technical functionality. These digital creations serve as a testament to my commitment to crafting innovative online experiences that captivate users and solve real-world problems. Dive in and discover the web's endless potential through my work</p>
                     <div className='project-contaner'>
@@ -148,13 +162,13 @@ const HOME = () => {
                         <h2>Backend</h2>
                         <p>Php</p>
                         <p>mySQL</p>
-                        <p>Apache</p>
+                        <p>XAMMP</p>
                         </div>
                     </div>
 
                 </div>
 
-                <div className="contacts">
+                <div className="contacts" ref={section2Ref}>
                     <h1>In need of a Developer ?</h1>
                     <div className='animation row'><span className='availability'></span> I'm currently available for work</div>
 
